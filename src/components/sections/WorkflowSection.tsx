@@ -1,36 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Plug, Inbox, Sparkles, TrendingUp } from "lucide-react";
+import { Phone, PhoneForwarded, Sparkles, TrendingUp } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
 
 const steps = [
   {
     number: 1,
-    title: "Connect your channels",
+    title: "Connect your phone numbers",
     description:
-      "Link your email, live chat, and social accounts in just a few clicks.",
-    icon: Plug,
+      "Link your business phone lines and toll-free numbers in just a few clicks.",
+    icon: Phone,
   },
   {
     number: 2,
-    title: "One unified inbox",
+    title: "Route calls to the right team",
     description:
-      "All conversations land in a single, organized workspace for your team.",
-    icon: Inbox,
+      "Smart call routing directs callers to the best available agent by skill, language, or department.",
+    icon: PhoneForwarded,
   },
   {
     number: 3,
-    title: "AI helps your team",
+    title: "AI helps agents resolve faster",
     description:
-      "Get draft replies, smart suggestions, and auto-summaries instantly.",
+      "Real-time AI summaries, suggested responses, and automatic note-taking keep agents focused.",
     icon: Sparkles,
   },
   {
     number: 4,
-    title: "Measure and improve",
+    title: "Measure and improve call quality",
     description:
-      "Track response times, satisfaction scores, and team performance at a glance.",
+      "Track resolution rates, call durations, and sentiment trends to continuously improve.",
     icon: TrendingUp,
   },
 ];

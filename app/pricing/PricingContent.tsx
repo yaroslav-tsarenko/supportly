@@ -21,16 +21,16 @@ interface ComparisonRow {
 }
 
 const comparisonRows: ComparisonRow[] = [
-  { feature: "Shared Inbox", starter: true, growth: true, scale: true },
-  { feature: "Live Chat", starter: true, growth: true, scale: true },
-  { feature: "AI Assistant", starter: false, growth: true, scale: true },
-  { feature: "Knowledge Base", starter: "Basic", growth: "Advanced", scale: "Advanced" },
-  { feature: "Automation", starter: false, growth: true, scale: true },
-  { feature: "Analytics", starter: false, growth: true, scale: true },
-  { feature: "Custom Branding", starter: false, growth: true, scale: true },
+  { feature: "Smart Call Routing", starter: true, growth: true, scale: true },
+  { feature: "Call Queue", starter: true, growth: true, scale: true },
+  { feature: "Agent Workspace", starter: true, growth: true, scale: true },
+  { feature: "AI Summaries", starter: false, growth: true, scale: true },
+  { feature: "Call Analytics", starter: "Basic", growth: "Advanced", scale: "Advanced" },
+  { feature: "Callbacks", starter: false, growth: true, scale: true },
+  { feature: "Live Monitoring", starter: false, growth: true, scale: true },
+  { feature: "Call Recording", starter: true, growth: true, scale: true },
   { feature: "SSO", starter: false, growth: false, scale: true },
   { feature: "API Access", starter: false, growth: false, scale: true },
-  { feature: "Priority Support", starter: false, growth: true, scale: true },
   { feature: "SLA Management", starter: false, growth: false, scale: true },
   { feature: "Dedicated Manager", starter: false, growth: false, scale: true },
 ];
@@ -264,7 +264,7 @@ export default function PricingContent() {
             transition={{ duration: 0.5 }}
             className="text-3xl font-bold tracking-tight text-[#101010]"
           >
-            Need something custom?
+            Need a custom call center solution?
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -273,7 +273,7 @@ export default function PricingContent() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-4 text-lg text-[#525252]"
           >
-            We offer tailored plans for enterprise teams with advanced security,
+            We offer tailored plans for enterprise call centers with advanced security,
             compliance, and integration needs.
           </motion.p>
           <motion.div

@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 import {
   Hash,
-  ShoppingBag,
+  Phone,
   CreditCard,
   Target,
-  Cloud,
-  MessageSquare,
-  Mail,
+  PhoneCall,
+  Users,
+  Headphones,
   Zap,
 } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -17,12 +17,12 @@ import { integrations } from "@/lib/site-data";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Hash,
-  ShoppingBag,
+  Phone,
   CreditCard,
   Target,
-  Cloud,
-  MessageSquare,
-  Mail,
+  PhoneCall,
+  Users,
+  Headphones,
   Zap,
 };
 

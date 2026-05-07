@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Supportly",
-  tagline: "Calm customer support software for growing teams",
+  tagline: "Smart call support software for growing teams",
   description:
-    "A modern customer support platform with shared inbox, live chat, AI replies, knowledge base, automation, and analytics.",
+    "A modern call support platform with smart routing, call queue management, AI call summaries, real-time monitoring, and powerful analytics.",
   url: "https://supportly.io",
   email: "hello@supportly.io",
 };
@@ -16,98 +16,98 @@ export const navLinks = [
 
 export const featureDropdownItems = [
   {
-    label: "Shared Inbox",
-    href: "/features#inbox",
-    description: "One inbox for all your conversations",
-    icon: "Inbox",
+    label: "Smart Call Routing",
+    href: "/features#call-routing",
+    description: "Route calls to the right agent or team automatically",
+    icon: "PhoneForwarded",
   },
   {
-    label: "Live Chat",
-    href: "/features#live-chat",
-    description: "Real-time conversations with customers",
-    icon: "MessageCircle",
+    label: "Call Queue Management",
+    href: "/features#call-queues",
+    description: "Organized queues that keep wait times low",
+    icon: "ListOrdered",
   },
   {
-    label: "AI Assistant",
-    href: "/features#ai",
-    description: "Smart replies and summaries powered by AI",
+    label: "Agent Workspace",
+    href: "/features#agent-workspace",
+    description: "Everything agents need during a call",
+    icon: "Headphones",
+  },
+  {
+    label: "AI Call Summaries",
+    href: "/features#ai-summaries",
+    description: "Automatic transcription and summaries for every call",
     icon: "Sparkles",
   },
   {
-    label: "Knowledge Base",
-    href: "/features#knowledge-base",
-    description: "Self-service help center for your customers",
-    icon: "BookOpen",
-  },
-  {
-    label: "Automation",
-    href: "/features#automation",
-    description: "Rules and workflows that save time",
-    icon: "Zap",
-  },
-  {
-    label: "Analytics",
+    label: "Call Analytics",
     href: "/features#analytics",
-    description: "Insights into your support performance",
+    description: "Track call metrics and team performance",
     icon: "BarChart3",
+  },
+  {
+    label: "Callback Requests",
+    href: "/features#callbacks",
+    description: "Let customers schedule callbacks instead of waiting",
+    icon: "PhoneCall",
   },
 ];
 
 export const features = [
   {
-    title: "Shared Inbox",
+    title: "Smart Call Routing",
     description:
-      "Bring email, chat, and social messages into one clean workspace. No more switching between tabs.",
-    icon: "Inbox",
+      "Automatically route incoming calls to the right agent or team based on skills, availability, and customer history.",
+    icon: "PhoneForwarded",
     color: "#EAF2FF",
   },
   {
-    title: "Live Chat",
+    title: "Call Queue Management",
     description:
-      "Talk to customers in real-time with a beautiful, customizable chat widget.",
-    icon: "MessageCircle",
+      "Keep call queues organized with priority levels, estimated wait times, and overflow rules.",
+    icon: "ListOrdered",
     color: "#DDF4E4",
   },
   {
-    title: "AI Assistant",
+    title: "Agent Workspace",
     description:
-      "Get draft replies, conversation summaries, and smart suggestions instantly.",
-    icon: "Sparkles",
+      "Give agents a unified workspace with caller info, history, and tools — everything they need during a call.",
+    icon: "Headphones",
     color: "#ECE7FF",
   },
   {
-    title: "Knowledge Base",
+    title: "AI Call Summaries",
     description:
-      "Create a searchable help center so customers can find answers on their own.",
-    icon: "BookOpen",
+      "Get automatic transcriptions and AI-generated summaries after every call. Never miss a detail.",
+    icon: "Sparkles",
     color: "#FFF3B8",
   },
   {
-    title: "Automation Rules",
+    title: "Call Analytics",
     description:
-      "Route conversations, assign tags, and trigger actions without lifting a finger.",
-    icon: "Zap",
+      "Track call volume, wait times, resolution rates, and agent performance with real-time dashboards.",
+    icon: "BarChart3",
     color: "#FFE4C2",
   },
   {
-    title: "Customer Timeline",
+    title: "Callback Requests",
     description:
-      "See every interaction, purchase, and note in one place for full context.",
-    icon: "Clock",
+      "Let customers request a callback instead of waiting on hold. Reduce abandonment and improve satisfaction.",
+    icon: "PhoneCall",
     color: "#FDE2EA",
   },
   {
-    title: "Team Collaboration",
+    title: "Live Call Monitoring",
     description:
-      "Internal notes, mentions, and assignments keep your team in sync.",
-    icon: "Users",
+      "Supervisors can listen in, whisper to agents, or join calls in real-time for coaching and quality assurance.",
+    icon: "Radio",
     color: "#EAF2FF",
   },
   {
-    title: "Analytics",
+    title: "Call History Timeline",
     description:
-      "Track response times, satisfaction scores, and team workload at a glance.",
-    icon: "BarChart3",
+      "See every call, recording, and summary for each customer in a single chronological timeline.",
+    icon: "Clock",
     color: "#DDF4E4",
   },
 ];
@@ -115,17 +115,17 @@ export const features = [
 export const pricingPlans = [
   {
     name: "Starter",
-    description: "For small teams getting started",
+    description: "For small teams handling inbound calls",
     monthlyPrice: 29,
     yearlyPrice: 24,
     popular: false,
     features: [
-      "Up to 3 team members",
-      "Shared inbox",
-      "Live chat widget",
-      "Basic knowledge base",
+      "Up to 3 agents",
+      "500 calls/month",
+      "Basic call routing",
+      "Call queue management",
+      "Call history",
       "Email support",
-      "500 conversations/month",
     ],
   },
   {
@@ -135,28 +135,28 @@ export const pricingPlans = [
     yearlyPrice: 66,
     popular: true,
     features: [
-      "Up to 15 team members",
+      "Up to 15 agents",
       "Everything in Starter",
-      "AI assistant",
-      "Automation rules",
-      "Analytics dashboard",
-      "Unlimited conversations",
+      "Unlimited calls",
+      "AI call summaries",
+      "Smart call routing",
+      "Call analytics dashboard",
+      "Callback requests",
       "Priority support",
-      "Custom branding",
     ],
   },
   {
     name: "Scale",
-    description: "For advanced operations",
+    description: "For advanced call operations",
     monthlyPrice: 199,
     yearlyPrice: 166,
     popular: false,
     features: [
-      "Unlimited team members",
+      "Unlimited agents",
       "Everything in Growth",
-      "Advanced AI features",
-      "Custom integrations",
+      "Live call monitoring",
       "SLA management",
+      "Custom integrations",
       "Dedicated account manager",
       "SSO & advanced security",
       "API access",
@@ -168,21 +168,21 @@ export const pricingPlans = [
 export const testimonials = [
   {
     quote:
-      "Supportly helped us reduce context switching and gave our team one calm place to work. Our response time dropped by 40% in the first month.",
+      "Supportly cut our missed calls by 60% in the first month. The smart routing means customers actually reach the right person on the first try.",
     name: "Sarah Chen",
     role: "Head of Support",
     company: "Bloom Commerce",
   },
   {
     quote:
-      "The AI suggestions are genuinely useful — not gimmicky. They help new team members respond with confidence from day one.",
+      "The AI call summaries save our agents at least an hour a day on post-call notes. We finally have accurate records without the busywork.",
     name: "Marcus Rivera",
     role: "Customer Success Lead",
     company: "Stackwise",
   },
   {
     quote:
-      "We moved from three different tools to just Supportly. The knowledge base alone saved us hours every week.",
+      "We consolidated three phone systems into Supportly and the transition was seamless. Our team loves the unified workspace.",
     name: "Emma Lindqvist",
     role: "Operations Manager",
     company: "Norde Studio",
@@ -196,41 +196,41 @@ export const faqs = [
       "Yes, every plan comes with a 14-day free trial. No credit card required. You can explore all features and decide which plan works best for your team.",
   },
   {
-    question: "Can I connect email and chat?",
+    question: "How do I connect my phone numbers?",
     answer:
-      "Absolutely. Supportly brings email, live chat, and social messages into a single shared inbox so your team never has to switch between tools.",
+      "Supportly works with your existing phone numbers. You can port numbers over or provision new ones directly from the dashboard. We support local, toll-free, and international numbers.",
   },
   {
     question: "Does it include AI features?",
     answer:
-      "Yes. Our AI assistant can draft replies, summarize conversations, suggest knowledge base articles, adjust tone, and auto-tag conversations. It's available on Growth and Scale plans.",
+      "Yes. Our AI engine automatically transcribes calls, generates summaries, detects customer sentiment, and suggests next steps. AI features are available on Growth and Scale plans.",
   },
   {
-    question: "Can I use Supportly for ecommerce?",
+    question: "Are calls recorded?",
     answer:
-      "Definitely. Supportly integrates with Shopify, Stripe, and other ecommerce tools so you can see order details right alongside customer conversations.",
+      "Yes, call recording is available on all plans. Recordings are stored securely and can be reviewed, searched, and shared. You can configure recording rules to meet compliance requirements.",
   },
   {
     question: "Is my data secure?",
     answer:
-      "Security is a top priority. We use end-to-end encryption, SOC 2 compliance, and regular security audits. Your data is stored in secure, redundant data centers.",
+      "Security is a top priority. We use end-to-end encryption for all calls, SOC 2 compliance, and regular security audits. Call recordings and data are stored in secure, redundant data centers.",
   },
   {
-    question: "Can I migrate from another tool?",
+    question: "Can I migrate from another phone system?",
     answer:
-      "Yes, we offer free migration assistance for teams moving from other help desk platforms. Our team will help you transfer your data and get set up smoothly.",
+      "Yes, we offer free migration assistance for teams moving from other phone support platforms. Our team will help you port numbers, transfer data, and get set up smoothly.",
   },
 ];
 
 export const integrations = [
   { name: "Slack", icon: "Hash", color: "#E8DEF8" },
-  { name: "Shopify", icon: "ShoppingBag", color: "#DDF4E4" },
-  { name: "Stripe", icon: "CreditCard", color: "#EAF2FF" },
-  { name: "HubSpot", icon: "Target", color: "#FFE4C2" },
   { name: "Salesforce", icon: "Cloud", color: "#EAF2FF" },
-  { name: "WhatsApp", icon: "MessageSquare", color: "#DDF4E4" },
-  { name: "Gmail", icon: "Mail", color: "#FDE2EA" },
+  { name: "HubSpot", icon: "Target", color: "#FFE4C2" },
+  { name: "Twilio", icon: "Phone", color: "#DDF4E4" },
+  { name: "RingCentral", icon: "PhoneCall", color: "#FDE2EA" },
   { name: "Zapier", icon: "Zap", color: "#FFF3B8" },
+  { name: "Microsoft Teams", icon: "Users", color: "#EAF2FF" },
+  { name: "Zendesk", icon: "Headphones", color: "#E8DEF8" },
 ];
 
 export const footerLinks = {
@@ -263,22 +263,22 @@ export const teamMembers = [
   {
     name: "Alex Morgan",
     role: "CEO & Co-Founder",
-    bio: "Former support lead at a fast-growing SaaS startup. Built Supportly to fix the problems he saw firsthand.",
+    bio: "Former support lead at a fast-growing SaaS startup. Built Supportly to fix the phone support problems he saw firsthand.",
   },
   {
     name: "Priya Patel",
     role: "CTO & Co-Founder",
-    bio: "Engineering leader with a passion for building tools that feel simple but do powerful things.",
+    bio: "Engineering leader with a passion for building call infrastructure that feels simple but handles massive scale.",
   },
   {
     name: "James Okafor",
     role: "Head of Design",
-    bio: "Believes great support software should feel as calm and friendly as the best customer interactions.",
+    bio: "Believes great call support software should feel as calm and intuitive as the best customer interactions.",
   },
   {
     name: "Lisa Nakamura",
     role: "Head of AI",
-    bio: "ML researcher focused on making AI that genuinely helps support teams rather than replacing them.",
+    bio: "ML researcher focused on making AI that genuinely helps call agents — from transcription to real-time suggestions.",
   },
 ];
 
@@ -289,9 +289,9 @@ export const companyValues = [
       "We build tools that are easy to understand and use. If something feels complicated, we haven't finished designing it.",
   },
   {
-    title: "Every conversation matters",
+    title: "Every call matters",
     description:
-      "Behind every support ticket is a real person. We build with empathy for both customers and support teams.",
+      "Behind every support call is a real person. We build with empathy for both customers and support teams.",
   },
   {
     title: "Calm by design",

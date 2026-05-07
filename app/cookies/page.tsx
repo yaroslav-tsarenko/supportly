@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description:
-    "Learn about how Supportly uses cookies and similar technologies.",
+    "Learn about how Supportly, the call support platform, uses cookies and similar technologies.",
 };
 
 function Section({

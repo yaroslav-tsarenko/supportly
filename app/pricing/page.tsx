@@ -4,7 +4,7 @@ import PricingContent from "./PricingContent";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, honest pricing for Supportly. Start free, upgrade when you're ready. All plans include a 14-day trial.",
+    "Simple, honest pricing for Supportly call support. Start free, upgrade when you're ready. All plans include a 14-day trial.",
 };
 
 export default function PricingPage() {

@@ -7,24 +7,24 @@ import {
   Menu,
   X,
   ChevronDown,
-  Inbox,
-  MessageCircle,
+  PhoneForwarded,
+  ListOrdered,
+  Headphones,
   Sparkles,
-  BookOpen,
-  Zap,
   BarChart3,
+  PhoneCall,
 } from "lucide-react";
 import Logo from "@/components/ui/Logo";
 import Button from "@/components/ui/Button";
 import { navLinks, featureDropdownItems } from "@/lib/site-data";
 
 const iconMap: Record<string, React.ElementType> = {
-  Inbox,
-  MessageCircle,
+  PhoneForwarded,
+  ListOrdered,
+  Headphones,
   Sparkles,
-  BookOpen,
-  Zap,
   BarChart3,
+  PhoneCall,
 };
 
 export default function Header() {
@@ -148,7 +148,7 @@ export default function Header() {
             href="/demo"
             className="text-sm font-medium text-[#525252] hover:text-[#101010] transition-colors"
           >
-            Book a demo
+            Talk to sales
           </Link>
           <Button href="/trial" size="sm">
             Start free trial
@@ -224,7 +224,7 @@ export default function Header() {
                   Start free trial
                 </Button>
                 <Button href="/demo" variant="secondary" size="md" className="w-full">
-                  Book a demo
+                  Talk to sales
                 </Button>
               </div>
             </div>

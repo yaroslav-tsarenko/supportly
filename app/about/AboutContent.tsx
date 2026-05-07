@@ -58,10 +58,10 @@ function getInitials(name: string) {
 
 const milestones = [
   { year: "2022", label: "Supportly founded" },
-  { year: "2023", label: "First 100 customers" },
-  { year: "2024", label: "AI features launch" },
+  { year: "2023", label: "First 100 call teams onboarded" },
+  { year: "2024", label: "AI call summaries launch" },
   { year: "2024", label: "Series A funding" },
-  { year: "2025", label: "5 000+ teams onboard" },
+  { year: "2025", label: "5 000+ call teams on the platform" },
 ];
 
 /* ================================================================== */
@@ -81,7 +81,7 @@ export default function AboutContent() {
             transition={{ duration: 0.5 }}
             className="text-4xl font-bold tracking-tight text-[#101010] sm:text-5xl"
           >
-            We&rsquo;re building the support platform we always wanted
+            We&rsquo;re building the call support platform we always wanted
           </motion.h1>
 
           <motion.p
@@ -91,8 +91,8 @@ export default function AboutContent() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-5 text-lg text-[#525252]"
           >
-            Customer support software that feels calm, considered, and genuinely
-            human &mdash; designed for teams who care about every conversation.
+            Phone support software that feels organized, considered, and genuinely
+            human &mdash; designed for teams who care about every call.
           </motion.p>
         </div>
       </section>
@@ -111,13 +111,13 @@ export default function AboutContent() {
               Our Mission
             </p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#101010] sm:text-4xl">
-              Make support work feel like meaningful work
+              Transform how businesses handle customer calls
             </h2>
             <p className="mt-4 text-[#525252] leading-relaxed">
-              We believe customer support should empower teams, not drain them.
-              Supportly is built so agents can focus on real conversations
-              instead of fighting their tools &mdash; with smart automation that
-              handles the rest.
+              We believe phone support should empower teams, not drain them.
+              Supportly is built so agents can focus on real calls
+              instead of fighting their tools &mdash; with smart routing and AI
+              that handles the rest.
             </p>
           </motion.div>
 
@@ -151,24 +151,24 @@ export default function AboutContent() {
             className="space-y-6 text-[#525252] leading-relaxed"
           >
             <motion.p variants={fadeUp} transition={{ duration: 0.5 }}>
-              Supportly started with a frustration most support teams know too
-              well. Our founders spent years working inside help desks that were
-              cluttered, slow, and built for metrics rather than people. Every
-              tool they tried added complexity instead of removing it.
+              Supportly started with a frustration most phone support teams know too
+              well. Our founders spent years working with call center tools that were
+              clunky, fragmented, and built for dashboards rather than people. Every
+              system they tried added complexity instead of removing it.
             </motion.p>
 
             <motion.p variants={fadeUp} transition={{ duration: 0.5 }}>
               In 2022 they decided to start from scratch &mdash; not to build
-              another ticket system, but to create a workspace where support
-              professionals could do their best work. The goal was simple: make
-              the software disappear so the conversation could take center stage.
+              another bloated call center suite, but to create a workspace where
+              phone support agents could do their best work. The goal was simple: make
+              the software disappear so the call could take center stage.
             </motion.p>
 
             <motion.p variants={fadeUp} transition={{ duration: 0.5 }}>
               Today Supportly is used by thousands of teams who share that
               belief. We remain a small, focused company that ships thoughtfully,
               listens to customers, and measures success by how calm and
-              effective our users feel &mdash; not by how many features we can
+              effective our agents feel &mdash; not by how many features we can
               cram into a sidebar.
             </motion.p>
           </motion.div>

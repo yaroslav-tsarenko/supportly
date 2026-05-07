@@ -6,32 +6,34 @@ import SectionHeader from "@/components/ui/SectionHeader";
 
 const metrics = [
   {
-    label: "Average response time",
+    label: "Average call duration",
     value: "4m 32s",
-    trend: "-12%",
+    trend: "-8%",
     positive: true,
   },
   {
-    label: "Resolved this week",
-    value: "847",
-    trend: "+8%",
+    label: "Calls resolved today",
+    value: "284",
+    trend: "+12%",
     positive: true,
   },
   {
-    label: "Customer satisfaction",
-    value: "94%",
-    trend: "+3%",
+    label: "First-call resolution",
+    value: "87%",
+    trend: "+5%",
     positive: true,
   },
 ];
 
 const teamWorkload = [
-  { name: "Sarah", value: 85 },
-  { name: "Marcus", value: 72 },
-  { name: "Emma", value: 63 },
-  { name: "James", value: 91 },
-  { name: "Priya", value: 54 },
+  { name: "Sarah", value: 47 },
+  { name: "Marcus", value: 38 },
+  { name: "Emma", value: 42 },
+  { name: "James", value: 51 },
+  { name: "Priya", value: 29 },
 ];
+
+const maxCalls = 60;
 
 const volumeData = [30, 45, 38, 60, 52, 70, 65, 80, 72, 90, 85, 78];
 
@@ -39,7 +41,7 @@ export default function AnalyticsSection() {
   return (
     <section className="py-20 md:py-28 bg-[#F8F5F0]">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionHeader label="ANALYTICS" title="See the full picture" />
+        <SectionHeader label="CALL ANALYTICS" title="See the full picture" />
 
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -92,21 +94,21 @@ export default function AnalyticsSection() {
                     <div className="flex-1 h-5 rounded-full bg-[#E5E1DA]/50 overflow-hidden">
                       <div
                         className="h-full rounded-full bg-[#0B57D0]"
-                        style={{ width: `${member.value}%` }}
+                        style={{ width: `${(member.value / maxCalls) * 100}%` }}
                       />
                     </div>
-                    <span className="w-8 text-right text-sm text-[#767676]">
-                      {member.value}%
+                    <span className="w-14 text-right text-sm text-[#767676]">
+                      {member.value} calls
                     </span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Conversation volume line chart */}
+            {/* Call volume chart */}
             <div className="rounded-xl border border-[#E5E1DA] bg-[#FAF7F2] p-5">
               <p className="mb-4 text-sm font-medium text-[#101010]">
-                Conversation volume
+                Call volume
               </p>
               <div className="flex h-32 items-end gap-1.5">
                 {volumeData.map((val, i) => (

@@ -2,28 +2,28 @@
 
 import { motion } from "framer-motion";
 import {
-  Inbox,
-  MessageCircle,
+  PhoneForwarded,
+  ListOrdered,
+  Headphones,
   Sparkles,
-  BookOpen,
-  Zap,
-  Clock,
-  Users,
   BarChart3,
+  PhoneCall,
+  Radio,
+  Clock,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { features } from "@/lib/site-data";
 import SectionHeader from "@/components/ui/SectionHeader";
 
 const iconMap: Record<string, LucideIcon> = {
-  Inbox,
-  MessageCircle,
+  PhoneForwarded,
+  ListOrdered,
+  Headphones,
   Sparkles,
-  BookOpen,
-  Zap,
-  Clock,
-  Users,
   BarChart3,
+  PhoneCall,
+  Radio,
+  Clock,
 };
 
 const stagger = {

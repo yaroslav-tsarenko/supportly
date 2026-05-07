@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Learn how Supportly collects, uses, and protects your personal information.",
+    "Learn how Supportly, the call support platform, collects, uses, and protects your personal information.",
 };
 
 function Section({
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
           </p>
           <p>
             If you integrate third-party services with Supportly (for example, a
-            CRM or messaging platform), we may receive data from those services
+            CRM or call support platform), we may receive data from those services
             in accordance with their own privacy policies and your
             authorization.
           </p>

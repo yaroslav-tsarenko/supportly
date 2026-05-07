@@ -15,19 +15,20 @@ import Button from "@/components/ui/Button";
 type FormState = "idle" | "submitting" | "success";
 
 const teamSizeOptions = ["1–5", "6–20", "21–50", "51–200", "200+"];
+const callbackTimeOptions = ["Morning", "Afternoon", "Evening"];
 
 const faqs = [
   {
     q: "How long does onboarding take?",
-    a: "Most teams are up and running within a day. Our onboarding specialists will guide you every step of the way.",
+    a: "Most teams are up and running within a day. Our onboarding specialists will guide you through number porting, routing setup, and agent training.",
   },
   {
     q: "Do you offer a free trial?",
-    a: "Yes — every plan includes a 14-day free trial with full access to all features. No credit card required.",
+    a: "Yes — every plan includes a 14-day free trial with full access to all call features. No credit card required.",
   },
   {
-    q: "Can I switch plans later?",
-    a: "Absolutely. You can upgrade, downgrade, or cancel your plan at any time from your account settings.",
+    q: "Can I keep my existing phone numbers?",
+    a: "Absolutely. We support number porting so you can bring your existing business numbers. We also provision new numbers if needed.",
   },
 ];
 
@@ -61,8 +62,8 @@ export default function ContactContent() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-4 text-lg text-[#525252]"
           >
-            Have a question, need a demo, or just want to say hello? We&rsquo;d
-            love to hear from you.
+            Have a question about our call support platform, need a demo, or
+            want to speak with our team? We&rsquo;d love to hear from you.
           </motion.p>
         </div>
       </section>
@@ -124,6 +125,23 @@ export default function ContactContent() {
                   />
                 </div>
 
+                {/* Phone number */}
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="mb-1.5 block text-sm font-medium text-[#101010]"
+                  >
+                    Phone number
+                  </label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    className="w-full rounded-lg border border-[#E5E1DA] bg-white px-4 py-2.5 text-sm text-[#101010] placeholder:text-[#767676] focus:border-[#0B57D0] focus:outline-none focus:ring-2 focus:ring-[#0B57D0]/30"
+                    placeholder="+1 (555) 000-0000"
+                  />
+                </div>
+
                 {/* Company */}
                 <div>
                   <label
@@ -163,6 +181,28 @@ export default function ContactContent() {
                   </select>
                 </div>
 
+                {/* Best time for a callback */}
+                <div>
+                  <label
+                    htmlFor="callbackTime"
+                    className="mb-1.5 block text-sm font-medium text-[#101010]"
+                  >
+                    Best time for a callback
+                  </label>
+                  <select
+                    id="callbackTime"
+                    name="callbackTime"
+                    className="w-full appearance-none rounded-lg border border-[#E5E1DA] bg-white px-4 py-2.5 text-sm text-[#101010] focus:border-[#0B57D0] focus:outline-none focus:ring-2 focus:ring-[#0B57D0]/30"
+                  >
+                    <option value="">Select a time</option>
+                    {callbackTimeOptions.map((opt) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
                 {/* Message */}
                 <div>
                   <label
@@ -186,7 +226,7 @@ export default function ContactContent() {
                   disabled={formState === "submitting"}
                   className="inline-flex items-center justify-center rounded-lg bg-[#0B57D0] px-7 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-[#063B91] focus:outline-none focus:ring-2 focus:ring-[#0B57D0]/30 disabled:opacity-60"
                 >
-                  {formState === "submitting" ? "Sending..." : "Send message"}
+                  {formState === "submitting" ? "Sending..." : "Request a callback"}
                 </button>
               </form>
             )}
@@ -199,20 +239,20 @@ export default function ContactContent() {
             transition={{ duration: 0.5, delay: 0.25 }}
             className="space-y-6"
           >
-            {/* Book a demo */}
+            {/* Schedule a call */}
             <div className="rounded-2xl border border-[#E5E1DA] bg-[#F8F5F0] p-6">
               <div className="mb-3 flex items-center gap-3">
                 <Calendar className="h-5 w-5 text-[#0B57D0]" />
                 <h3 className="text-base font-semibold text-[#101010]">
-                  Book a demo
+                  Schedule a call
                 </h3>
               </div>
               <p className="mb-4 text-sm text-[#525252]">
-                See Supportly in action with a personalized walkthrough tailored
-                to your team&rsquo;s needs.
+                See Supportly in action with a personalized walkthrough of our
+                call support platform, tailored to your team&rsquo;s needs.
               </p>
               <Button href="/contact" variant="primary" size="sm">
-                Schedule a demo
+                Schedule a call
               </Button>
             </div>
 

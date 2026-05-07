@@ -2,49 +2,49 @@
 
 import { motion } from "framer-motion";
 import {
-  Inbox,
-  Clock,
-  MessageSquareOff,
-  BookX,
+  PhoneMissed,
+  Timer,
+  UserX,
   EyeOff,
+  Unplug,
 } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
 
 const problems = [
   {
-    icon: Inbox,
-    title: "Messy inboxes",
+    icon: PhoneMissed,
+    title: "Missed calls",
     description:
-      "Conversations scattered across email, chat, and social — nothing in one place.",
-    color: "#FFE4C2",
-  },
-  {
-    icon: Clock,
-    title: "Slow response times",
-    description:
-      "Customers waiting too long because your team can't find the right information fast enough.",
+      "Customers can't get through. Calls go unanswered, ring out, or drop before reaching an agent.",
     color: "#FDE2EA",
   },
   {
-    icon: MessageSquareOff,
-    title: "Lost context",
+    icon: Timer,
+    title: "Long hold times",
     description:
-      "Teams lacking conversation history, asking customers to repeat themselves.",
-    color: "#ECE7FF",
+      "Customers waiting in queues too long, growing frustrated before they ever speak to someone.",
+    color: "#FFE4C2",
   },
   {
-    icon: BookX,
-    title: "Scattered knowledge",
+    icon: UserX,
+    title: "Lost context",
     description:
-      "No single source of truth — answers buried in docs, Slack threads, and people's heads.",
-    color: "#FFF3B8",
+      "Agents don't know caller history — customers repeat themselves every single time they call.",
+    color: "#ECE7FF",
   },
   {
     icon: EyeOff,
     title: "No visibility",
     description:
-      "Managers can't see what's happening, who's overloaded, or where things are falling through.",
+      "Managers can't see call performance, agent availability, or where service is falling short.",
     color: "#DDF4E4",
+  },
+  {
+    icon: Unplug,
+    title: "Scattered systems",
+    description:
+      "Phone, CRM, and helpdesk all disconnected — agents toggling between tools instead of helping callers.",
+    color: "#FFF3B8",
   },
 ];
 

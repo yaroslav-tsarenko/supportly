@@ -12,24 +12,24 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "Supportly — Calm Customer Support Software for Growing Teams",
+    default: "Supportly — Smart Call Support Software for Growing Teams",
     template: "%s | Supportly",
   },
   description:
-    "A modern customer support platform with shared inbox, live chat, AI replies, knowledge base, automation, and analytics.",
+    "A modern call support platform with smart routing, call queue management, AI call summaries, real-time monitoring, and powerful analytics.",
   openGraph: {
-    title: "Supportly — Calm Customer Support Software for Growing Teams",
+    title: "Supportly — Smart Call Support Software for Growing Teams",
     description:
-      "A modern customer support platform with shared inbox, live chat, AI replies, knowledge base, automation, and analytics.",
+      "A modern call support platform with smart routing, call queue management, AI call summaries, real-time monitoring, and powerful analytics.",
     type: "website",
     url: "https://supportly.io",
     siteName: "Supportly",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Supportly — Calm Customer Support Software for Growing Teams",
+    title: "Supportly — Smart Call Support Software for Growing Teams",
     description:
-      "A modern customer support platform with shared inbox, live chat, AI replies, knowledge base, automation, and analytics.",
+      "A modern call support platform with smart routing, call queue management, AI call summaries, real-time monitoring, and powerful analytics.",
   },
 };
 

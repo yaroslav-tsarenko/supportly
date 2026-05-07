@@ -4,7 +4,7 @@ import FeaturesContent from "./FeaturesContent";
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Explore all Supportly features: shared inbox, live chat, AI assistant, knowledge base, automation, and analytics — everything your team needs to deliver great support.",
+    "Explore all Supportly features: smart call routing, call queues, agent workspace, AI summaries, analytics, and callbacks — everything your team needs to deliver great call support.",
 };
 
 export default function FeaturesPage() {

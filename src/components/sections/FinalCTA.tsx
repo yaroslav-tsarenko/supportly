@@ -21,7 +21,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
         >
-          Ready to make support feel calm?
+          Ready to transform your call support?
         </motion.h2>
 
         <motion.p
@@ -31,7 +31,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="mt-4 text-lg text-white/80"
         >
-          Start your free trial today. No credit card required.
+          Start your free trial and see how smart call routing, AI summaries, and real-time analytics can level up your phone support.
         </motion.p>
 
         <motion.div
