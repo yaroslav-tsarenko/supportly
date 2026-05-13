@@ -237,20 +237,10 @@ export const footerLinks = {
   product: [
     { label: "Features", href: "/features" },
     { label: "Pricing", href: "/pricing" },
-    { label: "Integrations", href: "/features#integrations" },
-    { label: "Changelog", href: "#" },
   ],
   company: [
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
-    { label: "Careers", href: "#" },
-    { label: "Blog", href: "#" },
-  ],
-  resources: [
-    { label: "Help Center", href: "#" },
-    { label: "API Docs", href: "#" },
-    { label: "Status", href: "#" },
-    { label: "Community", href: "#" },
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
